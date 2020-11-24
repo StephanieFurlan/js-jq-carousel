@@ -8,6 +8,7 @@
    width: 60%;
    margin: 40px auto;
    display: flex;
+   position: relative;
 }
 
 #left,
@@ -25,16 +26,43 @@
    text-decoration: none;
 }
 
-#images {
-   width: 90%;
-   background-color: yellow;
-}
 
+#images {
+   height: 200px;
+   position: relative;
+   width: 90%;
+}
 #images img {
    display: none;
    width: 100%;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+
 }
+
+
 
 #images img.active {
    display: block;
+}
+
+#buttons {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.5);
+    color: white;
+}
+#buttons > i {
+    margin: 0 5px;
+    font-size: 10px;
+}
+#buttons > i.active {
+    color: blue;
 }

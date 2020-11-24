@@ -12,32 +12,24 @@ $(document).ready(function() {
 
 function prevImg() {
    // move to previous image
-   var act = $("img.active");
+   var act = $(".active");
+   log(act);
    act.removeClass("active");
    // first-last check
    if (act.hasClass("first")) {
-      $("img.last").addClass("active");
+      $(".last").addClass("active");
    } else {
       act.prev().addClass("active");
    }
-   // var act = $("img.active");
-   // act.animate({width:'toggle'},4000);
-   // if (act.hasClass("first")) {
-   //    $("img.last").addClass("active");
-   // } else {
-   //    var prev = act.prev();
-   //    prev.addClass("active");
-   //    act.animate({width:'toggle'},4000);
-   // }
 }
 
 function nextImg() {
    // move to next image
-   var act = $("img.active");
+   var act = $(".active");
    act.removeClass("active");
    // first-last check
    if (act.hasClass("last")) {
-      $("img.first").addClass("active");
+      $(".first").addClass("active");
    } else {
       act.next().addClass("active");
    }
@@ -46,8 +38,8 @@ function nextImg() {
 
 
 
-// var log = function($selector) {
-//     $selector.each(function() {
-//         console.log(this);
-//     });
-// };
+var log = function($selector) {
+    $selector.each(function() {
+        console.log(this);
+    });
+};
