@@ -19,7 +19,6 @@
    align-items: center;
    font-size: 30px;
 }
-
 #left a,
 #right a {
    color: inherit;
@@ -28,23 +27,13 @@
 
 
 #images {
-   height: 200px;
    position: relative;
    width: 90%;
 }
 #images img {
    display: none;
    width: 100%;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   overflow: hidden;
-
 }
-
-
-
 #images img.active {
    display: block;
 }
@@ -62,6 +51,9 @@
 #buttons > i {
     margin: 0 5px;
     font-size: 10px;
+}
+#buttons > i:hover {
+   cursor: pointer;
 }
 #buttons > i.active {
     color: blue;
