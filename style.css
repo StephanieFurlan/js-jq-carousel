@@ -1,0 +1,40 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.container {
+   width: 60%;
+   margin: 40px auto;
+   display: flex;
+}
+
+#left,
+#right {
+   width: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+}
+
+#left a,
+#right a {
+   color: inherit;
+   text-decoration: none;
+}
+
+#images {
+   width: 90%;
+   background-color: yellow;
+}
+
+#images img {
+   display: none;
+   width: 100%;
+}
+
+#images img.active {
+   display: block;
+}
